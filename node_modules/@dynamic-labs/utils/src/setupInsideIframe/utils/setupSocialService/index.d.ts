@@ -1,1 +1,0 @@
-export { setupSocialService } from './setupSocialService';

@@ -1,2 +1,0 @@
-export declare const getNetworkProviderBuilderRegistry: (client: import("../../../../../exports").DynamicClient) => import("..").NetworkProviderBuilderRegistry;
-//# sourceMappingURL=getNetworkProviderBuilderRegistry.d.ts.map

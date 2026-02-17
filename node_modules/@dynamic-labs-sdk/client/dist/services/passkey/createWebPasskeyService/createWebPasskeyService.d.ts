@@ -1,6 +1,0 @@
-import type { PasskeyService } from '../passkey.types';
-/**
- * Create a passkey service that uses the browser's WebAuthn API.
- */
-export declare const createWebPasskeyService: () => PasskeyService;
-//# sourceMappingURL=createWebPasskeyService.d.ts.map

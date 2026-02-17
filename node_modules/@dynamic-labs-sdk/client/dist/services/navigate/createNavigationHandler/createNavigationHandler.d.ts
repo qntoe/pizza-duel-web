@@ -1,6 +1,0 @@
-import type { NavigationHandler } from '../navigate.types';
-/**
- * Creates a navigation handler that uses the native window.location API.
- */
-export declare const createNavigationHandler: () => NavigationHandler;
-//# sourceMappingURL=createNavigationHandler.d.ts.map
