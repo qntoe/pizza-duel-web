@@ -1,0 +1,1 @@
+{"version":3,"file":"events.d.ts","sourceRoot":"","sources":["../../../../src/modules/wallets/walletAccount/events.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,uBAAuB,CAAC;AAE3D,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,aAAa;QACrB,qBAAqB,EAAE,CAAC,IAAI,EAAE;YAAE,cAAc,EAAE,aAAa,EAAE,CAAA;SAAE,KAAK,IAAI,CAAC;KAC5E;CACF;AAED,OAAO,EAAE,CAAC"}

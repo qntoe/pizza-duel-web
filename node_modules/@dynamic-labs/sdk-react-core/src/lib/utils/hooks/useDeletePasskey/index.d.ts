@@ -1,0 +1,1 @@
+export { useDeletePasskey } from './useDeletePasskey';

@@ -1,0 +1,34 @@
+import { exists } from '../runtime.js';
+import { SignMessageContextFromJSON, SignMessageContextToJSON } from './SignMessageContext.js';
+
+/* tslint:disable */
+function SignMessageWithWaasRequestFromJSON(json) {
+    return SignMessageWithWaasRequestFromJSONTyped(json);
+}
+function SignMessageWithWaasRequestFromJSONTyped(json, ignoreDiscriminator) {
+    if ((json === undefined) || (json === null)) {
+        return json;
+    }
+    return {
+        'message': json['message'],
+        'isFormatted': !exists(json, 'isFormatted') ? undefined : json['isFormatted'],
+        'roomId': !exists(json, 'roomId') ? undefined : json['roomId'],
+        'context': !exists(json, 'context') ? undefined : SignMessageContextFromJSON(json['context']),
+    };
+}
+function SignMessageWithWaasRequestToJSON(value) {
+    if (value === undefined) {
+        return undefined;
+    }
+    if (value === null) {
+        return null;
+    }
+    return {
+        'message': value.message,
+        'isFormatted': value.isFormatted,
+        'roomId': value.roomId,
+        'context': SignMessageContextToJSON(value.context),
+    };
+}
+
+export { SignMessageWithWaasRequestFromJSON, SignMessageWithWaasRequestFromJSONTyped, SignMessageWithWaasRequestToJSON };

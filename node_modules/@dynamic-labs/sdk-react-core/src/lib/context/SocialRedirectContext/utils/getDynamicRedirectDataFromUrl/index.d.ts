@@ -1,0 +1,1 @@
+export { getDynamicRedirectDataFromUrl } from './getDynamicRedirectDataFromUrl';

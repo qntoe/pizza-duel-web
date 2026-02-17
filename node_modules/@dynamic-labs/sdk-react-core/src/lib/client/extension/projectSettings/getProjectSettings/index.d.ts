@@ -1,0 +1,1 @@
+export { getProjectSettings } from './getProjectSettings';

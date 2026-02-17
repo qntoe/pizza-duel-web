@@ -1,0 +1,1 @@
+export { verifyTotpMfaDevice } from './verifyTotpMfaDevice';

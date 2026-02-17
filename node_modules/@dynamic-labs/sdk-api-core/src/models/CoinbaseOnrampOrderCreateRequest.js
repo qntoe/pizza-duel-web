@@ -1,0 +1,48 @@
+import { exists } from '../runtime.js';
+import { CoinbaseOnrampOrderPaymentMethodFromJSON, CoinbaseOnrampOrderPaymentMethodToJSON } from './CoinbaseOnrampOrderPaymentMethod.js';
+
+/* tslint:disable */
+function CoinbaseOnrampOrderCreateRequestFromJSON(json) {
+    return CoinbaseOnrampOrderCreateRequestFromJSONTyped(json);
+}
+function CoinbaseOnrampOrderCreateRequestFromJSONTyped(json, ignoreDiscriminator) {
+    if ((json === undefined) || (json === null)) {
+        return json;
+    }
+    return {
+        'agreementAcceptedAt': (new Date(json['agreementAcceptedAt'])),
+        'destinationAddress': json['destinationAddress'],
+        'destinationNetwork': json['destinationNetwork'],
+        'domain': !exists(json, 'domain') ? undefined : json['domain'],
+        'isQuote': !exists(json, 'isQuote') ? undefined : json['isQuote'],
+        'partnerUserRef': json['partnerUserRef'],
+        'paymentAmount': !exists(json, 'paymentAmount') ? undefined : json['paymentAmount'],
+        'paymentCurrency': json['paymentCurrency'],
+        'paymentMethod': CoinbaseOnrampOrderPaymentMethodFromJSON(json['paymentMethod']),
+        'purchaseAmount': !exists(json, 'purchaseAmount') ? undefined : json['purchaseAmount'],
+        'purchaseCurrency': json['purchaseCurrency'],
+    };
+}
+function CoinbaseOnrampOrderCreateRequestToJSON(value) {
+    if (value === undefined) {
+        return undefined;
+    }
+    if (value === null) {
+        return null;
+    }
+    return {
+        'agreementAcceptedAt': (value.agreementAcceptedAt.toISOString()),
+        'destinationAddress': value.destinationAddress,
+        'destinationNetwork': value.destinationNetwork,
+        'domain': value.domain,
+        'isQuote': value.isQuote,
+        'partnerUserRef': value.partnerUserRef,
+        'paymentAmount': value.paymentAmount,
+        'paymentCurrency': value.paymentCurrency,
+        'paymentMethod': CoinbaseOnrampOrderPaymentMethodToJSON(value.paymentMethod),
+        'purchaseAmount': value.purchaseAmount,
+        'purchaseCurrency': value.purchaseCurrency,
+    };
+}
+
+export { CoinbaseOnrampOrderCreateRequestFromJSON, CoinbaseOnrampOrderCreateRequestFromJSONTyped, CoinbaseOnrampOrderCreateRequestToJSON };

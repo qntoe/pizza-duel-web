@@ -1,0 +1,1 @@
+export { ConfirmExchangeTransferView } from './ConfirmExchangeTransferView';

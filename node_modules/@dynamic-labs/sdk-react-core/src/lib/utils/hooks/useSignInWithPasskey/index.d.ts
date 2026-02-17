@@ -1,0 +1,1 @@
+export { useSignInWithPasskey } from './useSignInWithPasskey';

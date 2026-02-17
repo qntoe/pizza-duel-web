@@ -1,0 +1,5 @@
+import { StorageOptions } from '@dynamic-labs/utils';
+export declare const CLIENT_SESSION_KEYS = "dynamic_client_session_keys";
+export declare const CLIENT_SESSION_KEYS_STORAGE_OPTIONS: StorageOptions;
+export declare const SECURE_ENCLAVE_WALLET_SESSION_KEYS = "dynamic_secure_enclave_session_keys";
+export declare const SECURE_ENCLAVE_WALLET_SESSION_KEYS_STORAGE_OPTIONS: StorageOptions;

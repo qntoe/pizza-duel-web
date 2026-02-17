@@ -1,0 +1,1 @@
+export { EmbeddedWalletRecoveryEmailSection } from './EmbeddedWalletRecoveryEmailSection';

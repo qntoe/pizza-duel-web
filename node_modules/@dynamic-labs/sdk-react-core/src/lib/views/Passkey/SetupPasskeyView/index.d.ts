@@ -1,0 +1,1 @@
+export { SetupPasskeyView } from './SetupPasskeyView';

@@ -1,0 +1,20 @@
+import { WalletConnectorBase } from '..';
+interface SessionKeys {
+    publicKey: string;
+    privateKey: string;
+}
+export interface ISessionKeyCompatibleWalletConnector extends WalletConnectorBase {
+    isSessionKeyCompatible(): boolean;
+    isSessionActive(): Promise<boolean>;
+    sessionKeys?: SessionKeys;
+    setSessionKeyFetcher(fetcher: ({ ignoreRestore, walletId, }: {
+        ignoreRestore?: boolean;
+        walletId: string;
+    }) => Promise<SessionKeys>): void;
+    setSessionKeyRemoveFunction(fetcher: () => void): void;
+    createOrRestoreSession({ ignoreRestore, }?: {
+        ignoreRestore?: boolean;
+    }): Promise<string | undefined>;
+    removeSessionKeys: (() => Promise<void>) | undefined;
+}
+export {};

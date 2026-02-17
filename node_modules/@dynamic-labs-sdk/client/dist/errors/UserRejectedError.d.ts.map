@@ -1,0 +1,1 @@
+{"version":3,"file":"UserRejectedError.d.ts","sourceRoot":"","sources":["../../src/errors/UserRejectedError.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,QAAQ,CAAC;AAEnC,KAAK,uBAAuB,GAAG;IAC7B,MAAM,EAAE,MAAM,CAAC;CAChB,CAAC;AAEF,qBAAa,iBAAkB,SAAQ,SAAS;gBAClC,EAAE,MAAM,EAAE,EAAE,uBAAuB;CAShD"}

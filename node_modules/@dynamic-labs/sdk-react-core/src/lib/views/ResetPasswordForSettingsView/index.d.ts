@@ -1,0 +1,1 @@
+export { ResetPasswordForSettingsView } from './ResetPasswordForSettingsView';

@@ -1,0 +1,22 @@
+{
+  "name": "pizza-duel-client",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dynamic-labs/ethereum": "^4.61.4",
+    "@dynamic-labs/sdk-react-core": "^4.61.4",
+    "@dynamic-labs/stellar": "^4.61.4",
+    "@stellar/freighter-api": "^6.0.1",
+    "@stellar/stellar-sdk": "^14.5.0",
+    "@supabase/supabase-js": "^2.95.3",
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

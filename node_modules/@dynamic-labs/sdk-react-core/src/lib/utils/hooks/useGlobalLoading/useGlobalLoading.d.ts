@@ -1,0 +1,20 @@
+import { ProjectSettings } from '@dynamic-labs/sdk-api-core';
+import { UserProfile } from '@dynamic-labs/types';
+import { WalletBookSchema } from '@dynamic-labs/wallet-book';
+import { Wallet } from '../../../shared/types/wallets';
+import { ConnectedWalletConnectorType } from '../useConnectWallet/useConnectWallet';
+type Props = {
+    connectedInfo: ConnectedWalletConnectorType | null;
+    connectedWallets: Wallet[];
+    primaryWallet: Wallet | null;
+    primaryWalletId: string | undefined;
+    projectSettings: ProjectSettings | undefined;
+    user: UserProfile | undefined;
+    walletBook: WalletBookSchema;
+    enableInstrumentation: boolean;
+    appName: string;
+    environmentId: string;
+    nonce: string | undefined;
+};
+export declare const useGlobalLoading: ({ connectedInfo, connectedWallets, projectSettings, primaryWalletId, primaryWallet, user, walletBook, enableInstrumentation, appName, environmentId, nonce, }: Props) => boolean;
+export {};

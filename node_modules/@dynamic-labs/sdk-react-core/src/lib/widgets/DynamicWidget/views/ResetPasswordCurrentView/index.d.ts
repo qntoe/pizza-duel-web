@@ -1,0 +1,1 @@
+export { ResetPasswordCurrentView } from './ResetPasswordCurrentView';

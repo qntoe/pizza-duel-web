@@ -1,0 +1,1 @@
+{"version":3,"file":"kraken.types.d.ts","sourceRoot":"","sources":["../../../../src/modules/funding/kraken/kraken.types.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EACV,OAAO,EACP,wBAAwB,EACxB,2BAA2B,EAC5B,MAAM,4BAA4B,CAAC;AAGpC,YAAY,EAAE,wBAAwB,EAAE,2BAA2B,EAAE,CAAC;AAEtE,MAAM,MAAM,aAAa,GAAG,OAAO,CAAC"}

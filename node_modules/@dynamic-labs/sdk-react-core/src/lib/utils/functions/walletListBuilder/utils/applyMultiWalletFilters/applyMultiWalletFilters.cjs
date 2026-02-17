@@ -1,0 +1,23 @@
+'use client'
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var filterConnectedWallets = require('../filterConnectedWallets/filterConnectedWallets.cjs');
+var staticLinkedWalletFilter = require('../staticLinkedWalletFilter/staticLinkedWalletFilter.cjs');
+var createMetaMaskMobileFilter = require('../createMetaMaskMobileFilter/createMetaMaskMobileFilter.cjs');
+var authMode = require('../../../../../store/state/authMode/authMode.cjs');
+
+const applyMultiWalletFilters = ({ userWallets, walletOptions, }) => {
+    const walletList = walletOptions.filter(createMetaMaskMobileFilter.createMetaMaskMobileFilter(userWallets));
+    const authMode$1 = authMode.getAuthMode();
+    if (authMode$1 === 'connect-only') {
+        return filterConnectedWallets.filterConnectedWallets({
+            userWallets,
+            walletOptions: walletList,
+        });
+    }
+    return staticLinkedWalletFilter.staticWalletFilter(userWallets, walletList);
+};
+
+exports.applyMultiWalletFilters = applyMultiWalletFilters;

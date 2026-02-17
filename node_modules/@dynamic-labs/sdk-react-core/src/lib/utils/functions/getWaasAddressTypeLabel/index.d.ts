@@ -1,0 +1,1 @@
+export { getWaasAddressTypeLabel } from './getWaasAddressTypeLabel';

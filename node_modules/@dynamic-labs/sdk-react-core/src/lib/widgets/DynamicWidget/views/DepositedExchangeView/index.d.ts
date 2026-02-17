@@ -1,0 +1,1 @@
+export { DepositedExchangeView } from './DepositedExchangeView';

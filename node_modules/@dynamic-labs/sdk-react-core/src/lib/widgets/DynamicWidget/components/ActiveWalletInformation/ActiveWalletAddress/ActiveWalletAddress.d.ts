@@ -1,0 +1,17 @@
+import { FC } from 'react';
+import { type MenuOption } from '../../../../../components/MenuList/DropdownMenu';
+import { Wallet } from '../../../../../shared';
+type ActiveWalletAddressProps = {
+    wallet: Wallet | null;
+    nameServiceName?: string;
+    menuOption: MenuOption[];
+    fullWidth?: boolean;
+    isLoading?: boolean;
+    addressTypeLabel?: string;
+};
+/**
+ * If the wallet has no icon, returns its key, nicely formatted.
+ */
+export declare const getNameIfNoIcon: (wallet: Wallet | null) => string | undefined;
+export declare const ActiveWalletAddress: FC<ActiveWalletAddressProps>;
+export {};

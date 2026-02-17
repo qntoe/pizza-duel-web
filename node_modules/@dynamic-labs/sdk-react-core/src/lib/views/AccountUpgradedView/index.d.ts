@@ -1,0 +1,1 @@
+export { AccountUpgradedView } from './AccountUpgradedView';

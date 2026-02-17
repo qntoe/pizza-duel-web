@@ -1,0 +1,1 @@
+{"version":3,"file":"NotWaasWalletAccountError.d.ts","sourceRoot":"","sources":["../../src/errors/NotWaasWalletAccountError.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,QAAQ,CAAC;AAEnC,KAAK,+BAA+B,GAAG;IACrC,aAAa,EAAE,MAAM,CAAC;CACvB,CAAC;AAEF,qBAAa,yBAA0B,SAAQ,SAAS;gBAC1C,EAAE,aAAa,EAAE,EAAE,+BAA+B;CAS/D"}

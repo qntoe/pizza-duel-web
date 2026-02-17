@@ -1,0 +1,1 @@
+export { WalletSecuritySection } from './WalletSecuritySection';

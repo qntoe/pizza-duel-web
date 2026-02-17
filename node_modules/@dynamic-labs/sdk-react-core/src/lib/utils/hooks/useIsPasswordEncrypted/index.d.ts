@@ -1,0 +1,1 @@
+export { useIsPasswordEncrypted } from './useIsPasswordEncrypted';

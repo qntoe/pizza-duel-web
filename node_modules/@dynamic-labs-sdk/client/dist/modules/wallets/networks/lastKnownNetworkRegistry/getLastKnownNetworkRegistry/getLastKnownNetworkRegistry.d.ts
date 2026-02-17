@@ -1,0 +1,2 @@
+export declare const getLastKnownNetworkRegistry: (client: import("../../../../../exports").DynamicClient) => import("../LastKnownNetworkRegistry.types").LastKnownNetworkRegistry;
+//# sourceMappingURL=getLastKnownNetworkRegistry.d.ts.map

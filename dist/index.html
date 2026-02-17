@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🍕 Pizza Duel — ZK Battle Arena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            font-family: 'Orbitron', sans-serif;
+            overflow: hidden;
+            user-select: none;
+            touch-action: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            height: 100dvh;
+            color: white;
+        }
+        #game-container {
+            position: relative;
+            border: 4px solid #5142f5;
+            box-shadow: 0 10px 40px rgba(81, 66, 245, 0.4);
+            border-radius: 30px;
+            overflow: hidden;
+            width: 450px;
+            height: 800px;
+        }
+        #game-container canvas {
+            display: block;
+            border-radius: 12px;
+        }
+        .pizza-font { font-family: 'Bangers', cursive; }
+    </style>
+  <script type="module" crossorigin src="./assets/index-eeGFHUFw.js"></script>
+</head>
+<body>
+    <div id="game-container"></div>
+</body>
+</html>

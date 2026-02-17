@@ -1,0 +1,1 @@
+export { useRegisterPasskey } from './useRegisterPasskey';

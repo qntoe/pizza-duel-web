@@ -1,0 +1,1 @@
+export { SetupPasswordForWalletCreationView } from './SetupPasswordForWalletCreationView';
